@@ -5,7 +5,7 @@ import datetime
 
 app = Flask(__name__)
 
-Database_file = './messenger/data/datbase.json'
+Database_file = './messenger/data/datbase.json' # this path is for my pc
 db = open(Database_file, "rb")  # rb means for reading
 data_mes = json.load(db)
 messages = data_mes['messages']  # from data we got, we take the messages field
